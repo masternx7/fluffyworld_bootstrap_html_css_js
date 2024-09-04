@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FluffyWorld - เว็บไซต์หลัก</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ICON WEB -->
+    <link rel="icon" href="assets/images/logo-f.png">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-drop">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#"><img
+                    src="https://store.fluffyworld.online/storage_img/Vf0xKHagv5MFqmYZ1687151810.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBarMenu"
+                aria-controls="navBarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="menu-toggle" onclick="ToggleMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navBarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="https://discord.gg/RFd9Hv8udX" target="_blank">NEWS</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="https://guide.fluffyworld.online/" target="_blank">GUIDES</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="https://guide.fluffyworld.online/rules/rules"
+                            target="_blank">RULES</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="https://store.fluffyworld.online/" target="_blank">STORE</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <img src="assets/images/logo-f.png" class="img-fluid img-logo" alt="">
+                </div>
+                <div class="col-12 discord-icon">
+                    <a href="https://discord.gg/RFd9Hv8udX"><i class="fa-brands fa-discord"></i></a>
+                    <button class="btn btn-primary btn-ip" id="copyIP">Fluffyworld.online</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Responsive Section -->
+
+    <section class="sesponsive">
+        <div class="container text-center ">
+            <h2 class="title">YOU CAN PLAY ANYWHERE</h2>
+            <div class="row text-center">
+                <div class="col-md-4 col-pc" data-aos="fade-up" data-aos-duration="300">
+                    <img src="assets/images/pc.png" class="img-fluid img-pc" alt="">
+                    <h4>Play on PC</h4>
+                    <p>Immerse yourself in the full Minecraft experience on PC, where you can enjoy high-resolution
+                        graphics, mods, and custom servers. Unleash your creativity with the power of the keyboard and
+                        mouse, taking your gameplay to the next level.</p>
+                </div>
+                <div class="col-md-4 col-pe" data-aos="fade-up" data-aos-duration="600">
+                    <img src="assets/images/pe.png" class="img-fluid img-pe" alt="">
+                    <h4>Play on Smart Phone</h4>
+                    <p>Take Minecraft on the go with your smartphone. Whether you're on the bus or relaxing at home,
+                        dive into endless adventures right from your pocket. Play with friends or solo in this portable,
+                        yet powerful version.</p>
+                </div>
+                <div class="col-md-4 col-pe" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="assets/images/plays.png" class="img-fluid img-play" alt="">
+                    <h4>Play on Console</h4>
+                    <p>Experience Minecraft like never before on console. Sit back, grab a controller, and enjoy
+                        seamless gameplay on the big screen. Whether you're building solo or with friends, the console
+                        version brings the world of Minecraft to life in your living room.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+
+    <section class="video-1">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
+                    <iframe class="v-yt" width="100%" height="350"
+                        src="https://www.youtube.com/embed/_iqFMFYGeTs?start=1830" frameborder="0"
+                        allowfullscreen></iframe>
+                    <p class="text-white txtCredit">Credit. Dice_abc</p>
+                </div>
+                <div class="col-md-6 d-flex align-items-center flex-column justify-content-center v-info">
+                    <h1>This video will help you improve your gameplay</h1>
+                    <p class="px-5">Our server boasts a warm and welcoming atmosphere where players from all
+                        around the
+                        world come
+                        together to build, explore, and create lasting friendships. Whether you're a seasoned player or
+                        just starting, you'll find helpful players ready to assist and share their knowledge. The spirit
+                        of cooperation and mutual respect makes our server a place where creativity thrives, and
+                        everyone feels at home.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Slide Section -->
+
+    <section class="photo-slide">
+        <div class="container d-flex justify-content-center align-items-center flex-column">
+            <h2 class="title-photo">The vibe in the server</h2>
+            <div id="carouselforMinecraft" class="carousel slide px-wide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="assets/images/p-1.png" class="d-block w-100" alt="photo-1">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="assets/images/p-2.png" class="d-block w-100" alt="photo-2">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="assets/images/p-3.png" class="d-block w-100" alt="photo-3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselforMinecraft"
+                    data-bs-slide="prev">
+                    <i class="fa-sharp-duotone fa-solid fa-circle-arrow-left"></i>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselforMinecraft"
+                    data-bs-slide="next">
+                    <i class="fa-sharp-duotone fa-solid fa-circle-arrow-right"></i>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <img src="assets/images/skin.png" alt="" class="img-fluid img-ab">
+        </div>
+    </section>
+
+    <!-- Photo 2 Section -->
+
+    <section class="photo-2 p-3">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6 d-flex align-items-center flex-column justify-content-center v-info">
+                    <h1>Open for more than 2 years</h1>
+                    <p>Supports cross-platform play, no need to worry about connectivity. Play with friends on any
+                        platform, join forces, and adventure together!</p>
+                    <p>Survival and economy system: For survival enthusiasts, you can build houses, farm, trade with
+                        other players in the market, or even set up your own shop!</p>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="row g-3 img-set">
+                        <div class="col-6 text-end">
+                            <img class="img-fluid rounded w-75" src="assets/images/p-1.png" style="margin-top: 25%;">
+                        </div>
+                        <div class="col-6 text-start">
+                            <img class="img-fluid rounded w-100" src="assets/images/p-2.png">
+                        </div>
+                        <div class="col-6 text-end">
+                            <img class="img-fluid rounded w-50" src="assets/images/p-3.png">
+                        </div>
+                        <div class="col-6 text-start">
+                            <img class="img-fluid rounded w-100" src="assets/images/p-3.png"
+                                style="transform: translateY(-35px);">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer" id="footer">
+        <img src="assets/images/wave2.png" class="footer-img" alt="">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-box">
+                    <img src="https://store.fluffyworld.online/storage_img/Vf0xKHagv5MFqmYZ1687151810.png"
+                        alt="logo-web" class="img-logo-footer">
+                    <p>ไม่มีส่วนเกี่ยวข้องกับ Mojang AB.</p>
+                </div>
+                <div class="col-md-4 icon-contact footer-box">
+                    <p><b>CONTACT US</b></p>
+                    <a href="https://www.facebook.com/fluffyworldmc" target="_blank">
+                        <i class="fa-brands fa-facebook"></i> Facebook</a><br>
+                    <a href="https://discord.gg/RFd9Hv8udX" target="_blank">
+                        <i class="fa-brands fa-discord"></i> Discord</a>
+                </div>
+                <div class="col-md-4 icon-contact footer-box">
+                    <p><b>OTHER</b></p>
+                    <a href="https://discord.gg/RFd9Hv8udX" target="_blank">NEWS</a><br>
+                    <a href="https://guide.fluffyworld.online/" target="_blank">GUIDES</a><br>
+                    <a href="https://guide.fluffyworld.online/rules/rules" target="_blank">RULES</a><br>
+                    <a href="https://store.fluffyworld.online/" target="_blank">STORE</a>
+                </div>
+            </div>
+            <div>
+                <p>Developed With ❤️ by Nontapat Supkong</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast CopyText -->
+
+    <div class="toast-container position-fixed bottom-0 p-3">
+        <div id="liveToast" class="toast bg-success-subtle" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header bg-success-subtle">
+                <img src="assets/images/logo-f.png" class="rounded me-2" style="width: 20px; height: auto;"
+                    alt="photo-logo">
+                <strong class="me-auto">FluffyWorld : <br>คัดลอก IP เรียบร้อยแล้ว!</strong>
+                <small>Just now</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+
+    <button id="btnBackToTop"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- MY SCRIPT -->
+    <script src="script.js"></script>
+</body>
+
+</html>

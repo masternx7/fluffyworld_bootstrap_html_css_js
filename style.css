@@ -1,0 +1,413 @@
+/* General CSS */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #0c0730;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5B42F3;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4732cf;
+}
+
+/* Navbar */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000 !important;
+}
+
+.navbar-toggler-icon {
+    outline: none !important;
+    color: #fff !important;
+}
+
+.navbar-brand img {
+    width: 200px;
+}
+
+.bg-drop {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(30px);
+}
+
+.abtn {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-nav li a {
+    color: #fff !important;
+    padding: 5px 20px !important;
+    border-radius: 10px;
+    position: relative;
+}
+
+.navbar-nav li a::before {
+    content: " ";
+    width: 2rem;
+    height: 0.2rem;
+    background: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    position: absolute;
+    bottom: -0.1rem;
+    opacity: 0;
+    transform: translateX(-1.5rem);
+    transition: all 0.2s ease;
+}
+
+.navbar-nav li a:hover::before {
+    width: 60%;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.img-logo {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 20px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+.img-info:hover {
+    transform: translateY(-0.5rem);
+}
+
+/* Menu Toggle */
+
+.navbar-toggler {
+    outline: none !important;
+}
+
+
+.menu-toggle {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 10px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -6px) rotate(45deg);
+}
+
+/* hero section */
+
+.hero {
+    background-image: url("https://wallpapercave.com/wp/wp10808658.jpg");
+    height: 90vh;
+    background-size: cover;
+}
+
+
+.img-logo {
+    width: 700px;
+    height: auto;
+}
+
+.discord-icon a {
+    display: inline-block;
+    background-color: #5849c9;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.discord-icon a:hover {
+    background-color: #6857e2;
+}
+
+.btn-ip {
+    background-color: #f14ce9 !important;
+    outline: none !important;
+    border: none;
+    height: 42px;
+    margin-left: 10px;
+    display: inline-block;
+    transform: translateY(-2px);
+}
+
+.btn-ip:hover {
+    background-color: #fa6df3 !important;
+}
+
+/*sesponsive section */
+
+.sesponsive {
+    margin-top: 5rem;
+}
+
+.title {
+    color: #fff;
+}
+
+.img-pc,
+.img-pe,
+.img-play {
+    width: 200px;
+    margin-top: 5rem;
+}
+
+
+.col-pc,
+.col-pe {
+
+    h4,
+    p {
+        color: #fff;
+        margin-top: 20px;
+    }
+}
+
+.col-pc,
+.col-pe {
+
+    h4 {
+        text-transform: uppercase;
+    }
+}
+
+/* video section */
+
+.video-1 {
+    margin-top: 3rem;
+    background-color: #0d044b;
+}
+
+.v-yt {
+    margin-top: 5rem;
+}
+
+.v-info {
+    color: #fff;
+}
+
+.v-info h1 {
+    font-size: 50px;
+    float: left;
+}
+
+/* Photo slide section*/
+
+.photo-slide {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    position: relative;
+}
+
+.img-ab {
+    position: absolute;
+    top: 18rem;
+    left: 20px;
+}
+
+.px-wide {
+    width: 80%;
+}
+
+.title-photo {
+    color: #fff;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+.txtCredit {
+    margin-bottom: 4rem;
+}
+
+.fa-circle-arrow-left,
+.fa-circle-arrow-right {
+    font-size: 40px;
+}
+
+
+/* Photo 2 Section */
+
+.photo-2 {
+    margin-top: 5rem;
+    background-color: #0d044b;
+}
+
+.img-set {
+    margin-top: 3rem;
+}
+
+/*Footer */
+
+.footer {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+#footer {
+    background-color: #0c0730;
+    color: #fff;
+}
+
+.footer-img {
+    width: 100%;
+}
+
+.img-logo-footer {
+    width: 200px;
+}
+
+.icon-contact a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.icon-contact .fa-brands {
+    margin-right: 8px;
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 2px;
+}
+
+.footer-box {
+    padding: 20px;
+}
+
+/* back to top*/
+
+#btnBackToTop {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    font-size: 22px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(49, 20, 211);
+    color: white;
+    cursor: pointer;
+    display: none;
+    transition: all 0.3s ease;
+}
+
+#btnBackToTop:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive Zone */
+
+@media (max-width: 1280px) {
+    .navbar-nav li a {
+        display: inline-block
+    }
+}
+
+@media (max-width: 769px) {
+    .img-logo {
+        transform: translateY(100px);
+    }
+
+    .discord-icon a {
+        transform: translateY(100px);
+    }
+
+    .btn-ip {
+        transform: translateY(98px);
+    }
+
+    .px-wide {
+        width: 100%;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .img-ab {
+        width: 30%;
+        transform: translateX(-50px);
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .img-ab {
+        width: 30%;
+        transform: translateX(-60px);
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .img-ab {
+        width: 25%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .img-ab {
+        width: 30%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .img-ab {
+        width: 30%;
+        left: -5rem;
+        transform: translateX(60px);
+    }
+}
